@@ -1,0 +1,51 @@
+{
+  "name": "ai-tokens",
+  "version": "1.0.1",
+  "description": "Real-time token counter and cost calculator for AI APIs",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "ai-tokens": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "tokens",
+    "cost",
+    "calculator",
+    "openai",
+    "claude",
+    "anthropic",
+    "gpt",
+    "llm",
+    "cli"
+  ],
+  "author": "Daniel Shashko",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danishashko/ai-tokens.git"
+  },
+  "homepage": "https://github.com/danishashko/ai-tokens#readme",
+  "bugs": {
+    "url": "https://github.com/danishashko/ai-tokens/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.2",
+    "ora": "^9.0.0",
+    "tiktoken": "^1.0.22"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
