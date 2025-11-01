@@ -71,6 +71,8 @@ function convertLiteLLMPricing(litellmData: Record<string, LiteLLMModel>): Recor
     'claude-3-haiku-20240307': { key: 'claude-3-haiku', name: 'Claude 3 Haiku', provider: 'Anthropic' },
 
     // Gemini models
+    'gemini-2.5-pro': { key: 'gemini-2.5-pro', name: 'Gemini 2.5 Pro', provider: 'Google' },
+    'gemini-2.5-flash': { key: 'gemini-2.5-flash', name: 'Gemini 2.5 Flash', provider: 'Google' },
     'gemini-2.0-flash-exp': { key: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', provider: 'Google' },
     'gemini-1.5-pro': { key: 'gemini-1.5-pro', name: 'Gemini 1.5 Pro', provider: 'Google' },
     'gemini-1.5-flash': { key: 'gemini-1.5-flash', name: 'Gemini 1.5 Flash', provider: 'Google' },
@@ -83,6 +85,8 @@ function convertLiteLLMPricing(litellmData: Record<string, LiteLLMModel>): Recor
     // DeepSeek
     'deepseek-chat': { key: 'deepseek-chat', name: 'DeepSeek Chat', provider: 'DeepSeek' },
     'deepseek-reasoner': { key: 'deepseek-reasoner', name: 'DeepSeek Reasoner', provider: 'DeepSeek' },
+    'deepseek/deepseek-r1': { key: 'deepseek-r1', name: 'DeepSeek R1', provider: 'DeepSeek' },
+    'deepseek/deepseek-coder': { key: 'deepseek-coder', name: 'DeepSeek Coder', provider: 'DeepSeek' },
   };
 
   for (const [litellmKey, model] of Object.entries(litellmData)) {

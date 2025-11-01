@@ -2,7 +2,7 @@
 
 **Stop guessing. Know exactly what your AI API calls cost—before you make them.**
 
-Real-time token counter and cost calculator for GPT-4, Claude, Gemini, and more. Built for developers who are tired of surprise API bills.
+Real-time token counter and cost calculator for GPT-5, Claude 4.5, Gemini 2.5, DeepSeek, and 20+ AI models. Built for developers who are tired of surprise API bills.
 
 [![npm version](https://img.shields.io/npm/v/ai-tokens.svg)](https://www.npmjs.com/package/ai-tokens)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -64,7 +64,7 @@ npm install -g ai-tokens
 Uses official tokenizers (tiktoken for OpenAI, estimations for others)
 
 ### ✅ Real-Time Cost Estimates
-Up-to-date pricing for GPT-4, Claude, Gemini, Llama
+Up-to-date pricing for GPT-5, Claude 4.5, Gemini 2.5, DeepSeek, and 20+ models
 
 ### ✅ Model Comparisons
 See exactly how much you'd save with cheaper alternatives
@@ -186,23 +186,31 @@ $ for file in prompts/*.txt; do
 
 ## 📊 Supported Models
 
+### Latest Models (2025)
 | Model | Input Price | Output Price |
 |-------|-------------|--------------|
-| GPT-4o | $5.00/M | $15.00/M |
+| **GPT-5** | $1.25/M | $5.00/M |
+| **GPT-5 Mini** | $0.15/M | $0.60/M |
+| **Claude Sonnet 4.5** | $3.00/M | $15.00/M |
+| **Gemini 2.5 Pro** | $1.25/M | $5.00/M |
+| **Gemini 2.5 Flash** | $0.30/M | $1.20/M |
+| **DeepSeek R1** | $0.14/M | $0.28/M |
+
+### Popular Models
+| Model | Input Price | Output Price |
+|-------|-------------|--------------|
+| GPT-4o | $2.50/M | $10.00/M |
 | GPT-4o Mini | $0.15/M | $0.60/M |
-| GPT-4 Turbo | $10.00/M | $30.00/M |
-| GPT-4 | $30.00/M | $60.00/M |
-| GPT-3.5 Turbo | $0.50/M | $1.50/M |
 | Claude Opus 4 | $15.00/M | $75.00/M |
 | Claude Sonnet 4 | $3.00/M | $15.00/M |
 | Claude Haiku 3.5 | $1.00/M | $5.00/M |
 | Gemini 2.0 Flash | FREE | FREE |
 | Gemini 1.5 Pro | $1.25/M | $5.00/M |
-| Gemini 1.5 Flash | $0.075/M | $0.30/M |
-| Llama 3.1 405B | $5.00/M | $15.00/M |
-| Llama 3.1 70B | $0.90/M | $0.90/M |
+| DeepSeek Chat | $0.14/M | $0.28/M |
 
-*Prices as of October 2025*
+**20+ models supported** - Pricing auto-updated from [LiteLLM](https://github.com/BerriAI/litellm) community data
+
+*Prices as of January 2025*
 
 ## 🛠️ How It Works
 
