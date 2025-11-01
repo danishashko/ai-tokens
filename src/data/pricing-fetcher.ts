@@ -47,6 +47,10 @@ function convertLiteLLMPricing(litellmData: Record<string, LiteLLMModel>): Recor
   // Map of LiteLLM model keys to our simplified keys
   const modelMappings: Record<string, { key: string; name: string; provider: string }> = {
     // OpenAI models
+    'gpt-5': { key: 'gpt-5', name: 'GPT-5', provider: 'OpenAI' },
+    'gpt-5-mini': { key: 'gpt-5-mini', name: 'GPT-5 Mini', provider: 'OpenAI' },
+    'gpt-5-nano': { key: 'gpt-5-nano', name: 'GPT-5 Nano', provider: 'OpenAI' },
+    'gpt-5-pro': { key: 'gpt-5-pro', name: 'GPT-5 Pro', provider: 'OpenAI' },
     'gpt-4o': { key: 'gpt-4o', name: 'GPT-4o', provider: 'OpenAI' },
     'gpt-4o-mini': { key: 'gpt-4o-mini', name: 'GPT-4o Mini', provider: 'OpenAI' },
     'gpt-4-turbo': { key: 'gpt-4-turbo', name: 'GPT-4 Turbo', provider: 'OpenAI' },
@@ -56,6 +60,8 @@ function convertLiteLLMPricing(litellmData: Record<string, LiteLLMModel>): Recor
     'o1-mini': { key: 'o1-mini', name: 'O1 Mini', provider: 'OpenAI' },
 
     // Claude models (Anthropic direct)
+    'claude-sonnet-4-5': { key: 'claude-sonnet-4-5', name: 'Claude Sonnet 4.5', provider: 'Anthropic' },
+    'claude-sonnet-4-5-20250929': { key: 'claude-sonnet-4-5', name: 'Claude Sonnet 4.5', provider: 'Anthropic' },
     'claude-opus-4-20250514': { key: 'claude-opus-4', name: 'Claude Opus 4', provider: 'Anthropic' },
     'claude-sonnet-4-20250514': { key: 'claude-sonnet-4', name: 'Claude Sonnet 4', provider: 'Anthropic' },
     'claude-3-5-sonnet-20241022': { key: 'claude-sonnet-3-5', name: 'Claude 3.5 Sonnet', provider: 'Anthropic' },
